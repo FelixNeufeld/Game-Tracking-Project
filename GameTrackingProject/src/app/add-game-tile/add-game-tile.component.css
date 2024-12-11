@@ -1,0 +1,15 @@
+.addCard{
+    width: 330px;
+    height: 470px;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9D9D9;
+    color: white;
+    font-size: 100px;
+    display:flex;
+}
+
+.addCard:hover {
+    color: #BA1200;
+}

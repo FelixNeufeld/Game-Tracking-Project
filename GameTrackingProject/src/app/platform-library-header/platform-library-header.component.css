@@ -1,0 +1,5 @@
+.platformHeaderContainer{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 330px));
+    gap: 15px;
+}

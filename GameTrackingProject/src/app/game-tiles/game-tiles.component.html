@@ -1,0 +1,18 @@
+<platform-library-header class="platformHeader" (sort)="sortGames($event)"></platform-library-header>
+
+<div class="gamePreviewConatiner">
+
+    <div *ngIf="items.length === 0; then noItems else showItems"></div>
+  
+    <ng-template #noItems>
+      You have no games in your Library
+    </ng-template>
+  
+    <ng-template #showItems>
+      <div *ngFor="let item of items" class="gamePreview">
+        <img [src]= item.imageUrl class="game" (click)="selectGame(item)"/>
+      </div>
+      <add-game-tile (addGame)="items.push($event)"></add-game-tile>
+    </ng-template>
+  
+  </div>
